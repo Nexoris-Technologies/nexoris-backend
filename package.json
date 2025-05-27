@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^6.0.1",
+    "@ckeditor/ckeditor5-build-classic": "^41.4.2",
+    "@ckeditor/ckeditor5-react": "^9.5.0",
+    "@strapi/plugin-cloud": "5.13.1",
+    "@strapi/plugin-users-permissions": "5.13.1",
+    "@strapi/strapi": "5.13.1",
+    "@tiptap/extension-font-family": "^2.12.0",
+    "@tiptap/extension-text-align": "^2.12.0",
+    "@tiptap/extension-text-style": "^2.12.0",
+    "pg": "8.8.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18.3.22",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "08556728-fc5a-498d-b94f-7d7210d58bee",
+    "installId": "98aff205729dfb7006e69d945828853fbbd84d0b80929eb29d7f83e2007db2b4"
+  }
+}

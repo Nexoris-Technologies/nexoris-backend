@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_shared_faq_items",
+  "info": {
+    "displayName": "shared.faq-item"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}

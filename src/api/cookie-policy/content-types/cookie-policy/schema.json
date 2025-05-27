@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "cookie_policies",
+  "info": {
+    "singularName": "cookie-policy",
+    "pluralName": "cookie-policies",
+    "displayName": "Cookie Policy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "lastUpdated": {
+      "type": "date"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "seoMeta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.shared-seo-meta"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.shared-faq-item"
+    }
+  }
+}

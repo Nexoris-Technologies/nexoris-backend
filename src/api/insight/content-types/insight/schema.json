@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "insights",
+  "info": {
+    "singularName": "insight",
+    "pluralName": "insights",
+    "displayName": "Insight",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true,
+      "maxLength": 160,
+      "unique": true
+    },
+    "publishedDate": {
+      "type": "date"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "seoMeta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.shared-seo-meta"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.shared-faq-item"
+    },
+    "schemaType": {
+      "type": "enumeration",
+      "enum": [
+        "article",
+        "review"
+      ],
+      "required": true,
+      "default": "article"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_shared_seo_metas",
+  "info": {
+    "displayName": "shared.seo-meta"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60,
+      "unique": true,
+      "required": true
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "canonicalURL": {
+      "type": "string"
+    },
+    "noIndex": {
+      "type": "boolean"
+    },
+    "noFollow": {
+      "type": "boolean"
+    },
+    "metaImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
